@@ -1,15 +1,29 @@
 {
   "name": "first-clock",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
   "devDependencies": {
-    "@fitbit/sdk": "^3.1.0",
+    "@fitbit/sdk": "~3.1.0",
     "@fitbit/sdk-cli": "^1.6.0"
+  },
+  "fitbit": {
+    "appUUID": "4d8b11f6-aecf-4fd7-acf2-445cbaa4f9a0",
+    "appType": "clockface",
+    "appDisplayName": "First Clock",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
   }
 }
