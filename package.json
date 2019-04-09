@@ -1,0 +1,15 @@
+{
+  "name": "first-clock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fitbit/sdk": "^3.1.0",
+    "@fitbit/sdk-cli": "^1.6.0"
+  }
+}
