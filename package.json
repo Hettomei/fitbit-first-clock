@@ -1,8 +1,8 @@
 {
-  "name": "first-clock",
+  "name": "tim-first-clock",
   "version": "0.1.0",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "@fitbit/sdk": "~3.1.0",
     "@fitbit/sdk-cli": "^1.6.0"
@@ -10,16 +10,23 @@
   "fitbit": {
     "appUUID": "4d8b11f6-aecf-4fd7-acf2-445cbaa4f9a0",
     "appType": "clockface",
-    "appDisplayName": "First Clock",
+    "appDisplayName": "Tim First Clock",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
-    "requestedPermissions": [],
-    "buildTargets": [
-      "higgs",
-      "meson",
-      "gemini"
+    "requestedPermissions": [
+      "access_heart_rate"
     ],
-    "i18n": {},
+    "buildTargets": [
+      "higgs"
+    ],
+    "i18n": {
+      "en": {
+        "name": "tim-clock1"
+      },
+      "fr": {
+        "name": "tim-clock1"
+      }
+    },
     "defaultLanguage": "en-US"
   },
   "scripts": {
